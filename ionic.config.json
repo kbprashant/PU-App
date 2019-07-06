@@ -1,0 +1,7 @@
+{
+  "name": "PUApp",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

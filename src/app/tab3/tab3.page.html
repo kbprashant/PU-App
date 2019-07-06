@@ -1,0 +1,300 @@
+<ion-header>
+  <ion-toolbar >
+    <ion-title style = "font-family:Product Sans;">
+      For Your Information
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+     
+  <ion-grid class="Grid">
+    <ion-row>
+      <ion-col size="7">
+          <ion-list class="bustimelist" 
+          lines="none"
+          style="height: 90%;
+          background: #488aff;
+          border-radius: 10px;">
+            
+            <ion-item class="bustimeit1"
+              href="/bustime" routerDirection="forward"
+              color="#488aff">
+              <ion-icon name="bus" color="light"
+              style="height: 100%;
+              zoom:2.0;
+              color:#f4f4f4;          
+              margin-top:0%;
+              margin-bottom: 0%;
+              text-align: center;
+              width: 100%;
+              ">
+              </ion-icon>
+            </ion-item>
+            
+            <ion-item href="/bustime" routerDirection="forward"
+              color="#488aff">
+              <p style="font-size: small;
+              color:white;
+              margin-bottom: 0%;
+              margin-top: 0%;
+              text-align: center;
+              width: 100%;">
+              Bus Time</p>
+            </ion-item>
+          </ion-list>
+
+      </ion-col>
+      <ion-col size="5">
+        <ion-list 
+        lines="none"
+        style="height: 90%;         
+        background: #488aff;
+        border-radius: 10px;">
+          
+          <ion-item 
+            href="/events" routerDirection="forward"
+            color="#488aff">
+            <ion-icon name="globe" 
+            style="height: 90%;
+            zoom:2.0;
+            color:#f4f4f4;          
+            margin-top:5%;
+            margin-bottom: 0%;
+            text-align: center;
+            width: 100%;" 
+            >
+            </ion-icon>
+          
+          </ion-item>
+          <ion-item href="/events" routerDirection="forward"
+            color="#488aff">
+            <p style="font-size: small;
+            color:white;
+            text-align: center;
+            width: 100%;
+            margin-bottom: 0%;
+            margin-top: 0%;">
+           Events</p>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+
+  <ion-row>
+    <ion-col size="5">
+      <ion-list 
+      lines="none"
+      style="height: 90%;         
+      background: #488aff;
+      border-radius: 10px;">
+        
+        <ion-item 
+        (click)="redirect()" routerDirection="forward"
+          color="#488aff">
+          <ion-icon name="logo-buffer" 
+          style="height: 90%;
+          zoom:2.0;
+          color:#f4f4f4;          
+          margin-top:5%;
+          margin-bottom: 0%;
+          text-align: center;
+          width: 100%;">
+          </ion-icon>
+        
+        </ion-item>
+        <ion-item (click)="redirect()" routerDirection="forward"
+          color="#488aff">
+          <p style="font-size: small;
+          color:white;
+          text-align: center;
+          width: 100%;
+          margin-bottom: 0%;
+          margin-top: 0%;">
+         Schools</p>
+        </ion-item>
+      </ion-list>
+    </ion-col>
+    
+    <ion-col size="7">
+      <ion-list class="bustimelist" 
+      lines="none"
+      style="height: 90%;
+      background: #488aff;
+      border-radius: 10px;">
+        
+        <ion-item class="bustimeit1"
+        (click)="redirect2()" routerDirection="forward"
+          color="#488aff">
+          <ion-icon name="document" 
+          style="height: 100%;
+          zoom:2.0;
+          color:#f4f4f4;          
+          margin-top:0%;
+          margin-bottom: 0%;
+          text-align: center;
+          width: 100%;">
+          </ion-icon>
+        </ion-item>
+        
+        <ion-item (click)="redirect2()" routerDirection="forward"
+          color="#488aff">
+          <p style="font-size: small;
+          color:white;
+          text-align: center;
+          width: 100%;
+          margin-bottom: 0%;
+          margin-top: 0%;">
+          Syllabus</p>
+        </ion-item>
+      </ion-list>
+  </ion-col>
+    </ion-row>
+  
+    <ion-row>
+      <ion-col size="12">
+        <ion-list class="bustimelist" 
+        lines="none"
+        style="height: 90%;
+        background: #488aff;
+        border-radius: 10px;">
+          
+          <ion-item class="bustimeit1"
+          (click)="redirect3()" routerDirection="forward"
+            color="#488aff">
+            <ion-icon name="person" 
+            style="height: 100%;
+            zoom:2.0;
+            color:#f4f4f4;          
+            margin-top:0%;
+            margin-bottom: 0%;
+            text-align: center;
+            width: 100%;">
+            </ion-icon>
+          </ion-item>
+          
+          <ion-item (click)="redirect3()" routerDirection="forward"
+            color="#488aff">
+            <p style="font-size: small;
+            color:white;
+            text-align: center;
+            width: 100%;
+            margin-bottom: 0%;
+            margin-top: 0%;">
+            Admissions</p>
+          </ion-item>
+        </ion-list>
+    </ion-col>
+      
+  </ion-row>
+  
+      <ion-row>
+        <ion-col size="7">
+          <ion-list class="bustimelist" 
+          lines="none"
+          style="height: 90%;
+          background: #488aff;
+          border-radius: 10px;">
+            
+            <ion-item class="bustimeit1"
+            (click)="redirect4()" routerDirection="forward"
+              color="#488aff">
+              <ion-icon name="flower" 
+              style="height: 100%;
+              zoom:2.0;
+              color:#f4f4f4;          
+              margin-top:0%;
+              margin-bottom: 0%;
+              text-align: center;
+              width: 100%;">
+              </ion-icon>
+            </ion-item>
+            
+            <ion-item (click)="redirect4()" routerDirection="forward"
+              color="#488aff">
+              <p style="font-size: small;
+              color:white;
+              text-align: center;
+              width: 100%;
+              margin-bottom: 0%;
+              margin-top: 0%;">
+              Students Acheivements</p>
+            </ion-item>
+          </ion-list>
+      </ion-col>
+     
+      <ion-col size="5">
+        <ion-list class="bustimelist" 
+        lines="none"
+        style="height: 90%;
+        background: #488aff;
+        border-radius: 10px;">
+          
+          <ion-item class="bustimeit1"
+          (click)="redirect5()" routerDirection="forward"
+            color="#488aff">
+            <ion-icon name="cash" 
+            style="height: 100%;
+            zoom:2.0;
+            color:#f4f4f4;          
+            margin-top:0%;
+            margin-bottom: 0%;
+            text-align: center;
+            width: 100%;">
+            </ion-icon>
+          </ion-item>
+          
+          <ion-item (click)="redirect5()" routerDirection="forward"
+            color="#488aff">
+            <p style="font-size: small;
+            color:white;
+            text-align: center;
+            width: 100%;
+            margin-bottom: 0%;
+            margin-top: 0%;">
+            Fees</p>
+          </ion-item>
+        </ion-list>
+    </ion-col>
+  </ion-row>
+      
+    <ion-row>
+      <ion-col size="12">
+        <ion-list class="bustimelist" 
+        lines="none"
+        style="height: 90%;
+        background: #488aff;
+        border-radius: 10px;">
+          
+          <ion-item class="bustimeit1"
+          (click)="redirect6()" routerDirection="forward"
+            color="#488aff">
+            <ion-icon name="alert" 
+            style="height: 100%;
+            zoom:2.0;
+            color:#f4f4f4;          
+            margin-top:0%;
+            margin-bottom: 0%;
+            text-align: center;
+            width: 100%;">
+            </ion-icon>
+          </ion-item>
+          
+          <ion-item (click)="redirect6()" routerDirection="forward"
+            color="#488aff">
+            <p style="font-size: small;
+            color:white;
+            text-align: center;
+            width: 100%;
+            margin-bottom: 0%;
+            margin-top: 0%;">
+            Complaints</p>
+          </ion-item>
+        </ion-list>
+        </ion-col>
+      </ion-row>
+  
+
+  </ion-grid>
+
+</ion-content>

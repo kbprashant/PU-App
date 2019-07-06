@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-button [routerLink]="['/tabs/tab1']" routerDirection="forward" routerLinkActive="router-link-active" slot="start">
+        <ion-icon name="arrow-back" size="large"></ion-icon>
+        Back
+      </ion-button>
+    <ion-title>News</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  
+    <ion-card *ngFor="let item of data.Database; let i = index">
+        <ion-card-header>
+          <ion-card-subtitle><p><strong>Date: </strong>{{item.date}}</p></ion-card-subtitle>
+          <ion-card-title><p>{{item.title}}</p></ion-card-title>
+        </ion-card-header>
+      
+        <ion-card-content>
+          <p>{{item.desc}}</p>
+        </ion-card-content>
+
+        <ion-item lines="none"
+        href={{item.url}} routerDirection="forward"
+        style="background: #488aff;">
+        <ion-icon color="primary" name="share"
+        style="
+        text-align: center;
+        width: 100%">
+        </ion-icon>
+      </ion-item>
+      </ion-card>
+</ion-content>

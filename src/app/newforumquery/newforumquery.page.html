@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-button [routerLink]="['/tabs/tab2']" routerDirection="forward" routerLinkActive="router-link-active" slot="start">
+        <ion-icon name="arrow-back" size="large"></ion-icon>
+        Back
+      </ion-button>
+    <ion-title>newforumquery</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+<ion-item>
+<ion-input placeholder="Query Topic">
+    
+</ion-input>
+</ion-item>
+
+<ion-item>
+<ion-textarea rows="6" cols="20" placeholder="Query message."></ion-textarea>
+</ion-item>
+
+
+  <ion-button size="default" expand="block" [routerLink]="['/tabs/tab2']" routerDirection="forward" routerLinkActive="router-link-active" >
+    Submit
+  </ion-button>
+
+</ion-content>

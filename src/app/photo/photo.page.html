@@ -1,0 +1,26 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-button [routerLink]="['/tabs/tab1']" routerDirection="forward" routerLinkActive="router-link-active" slot="start">
+          <ion-icon name="arrow-back" size="large"></ion-icon>
+          Back
+        </ion-button>
+      <ion-title>Photos</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content padding>
+    <ion-card *ngFor="let item of data.Database; let i = index">
+        <ion-img [src]="item.img"></ion-img>
+      <ion-card-header>
+        <ion-card-subtitle>
+          <p><strong>Date: </strong>{{item.date}}</p>
+        </ion-card-subtitle>
+        <ion-card-title>
+          <p><strong>Title: </strong>{{item.title}}</p>
+        </ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+          <p><strong>Desc: </strong>{{item.desc}}</p>
+        </ion-card-content>
+      </ion-card>
+</ion-content>

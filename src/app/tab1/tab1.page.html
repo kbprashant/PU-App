@@ -1,0 +1,59 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title style = "font-family:Product Sans;">
+      Pondicherry University
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content> 
+  <ion-list color="light" class="News">  
+
+    <ion-item class="ft1">
+      <ion-label style = "font-family:Product Sans">
+        Flash News</ion-label>
+    </ion-item>
+    
+    <ion-slides>
+      <ion-slide *ngFor="let item of data.offices; let i = index">
+        <p>{{item.fnews}}</p>
+      </ion-slide>
+    </ion-slides>
+   
+    <ion-button href="/allnews" routerDirection="forward" fill=solid expand=block color="primary">
+      All News
+    </ion-button>
+  </ion-list>
+
+<ion-card>
+  <ion-list>
+  <ion-list-header>
+    <h3>Students Corner</h3>
+  </ion-list-header>
+  <ion-item href='/photo'>
+    <ion-icon md="md-image" slot="start"></ion-icon>
+    <ion-label>Photographs</ion-label>
+  </ion-item>
+  <ion-item (click)="redirect()">
+    <ion-icon md="md-document" slot="start"></ion-icon>
+    <ion-label (click)="redirect()">Notes</ion-label>
+  </ion-item>
+  <ion-item (click)="redirect2()" lines="none">
+    <ion-icon md="md-rewind" slot="start"></ion-icon>
+    <ion-label (click)="redirect2()">Previous Year Question Papers</ion-label>
+    
+  </ion-item>
+</ion-list>
+</ion-card>
+
+
+  <ion-button href="/mapmain" routerDirection="forward" size=large expand=block color=primary fill=outline>
+    <ion-icon name="navigate"></ion-icon>
+    Explore PU
+  </ion-button>
+  
+  <ion-card>
+       
+    
+  </ion-card>
+</ion-content>
